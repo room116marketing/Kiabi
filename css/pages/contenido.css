@@ -1,0 +1,252 @@
+.news-content-title {
+    color: #040037;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.first-news img {
+    width: 100%;
+}
+
+.img-description {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.news-title-big {
+    color: #040037;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+.img-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+}
+
+.img-wrapper img {
+    width: 47%;
+    height: auto;
+}
+
+.about-wrapper {
+    margin-top: 80px;
+}
+
+
+.bold-text {
+    color: #040037;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.gray-text {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.gray-text-underline {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 82px;
+    margin-top: 20px;
+}
+
+
+
+hr {
+    border: none;
+    border-top: 1px solid #040037;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    font-size: 19.962px;
+    font-weight: bold;
+    width: auto;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+
+.button img {
+    width: 20px;
+    height: 20px;
+}
+
+.button span {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: uppercase;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.button-wrapper div {
+    width: 50%;
+
+}
+
+.about-title {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-content {
+    color: #8D8C8C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.grid-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 81px;
+    margin-top: 72px;
+    margin-bottom: 82px;
+}
+
+.grid-news img {
+    width: 100%;
+    object-fit: cover;
+    height: 260px;
+}
+
+.news-content-date {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+
+    .news-content-title {
+        font-size: 36px;
+    }
+
+    .news-title-big {
+        font-size: 32px;
+    }
+
+    .img-wrapper {
+        flex-direction: column;
+    }
+
+    .img-wrapper img {
+        width: 50%;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-wrapper {
+        flex-direction: column;
+    }
+
+    .button-wrapper div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .grid-news {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .news-content-title {
+        font-size: 28px;
+    }
+
+    .news-title-big {
+        font-size: 24px;
+    }
+
+    .bold-text {
+        font-size: 18px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-news {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+    }
+}

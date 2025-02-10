@@ -1,0 +1,223 @@
+.bold-text {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.gray-text {
+  color: #8D8C8C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.gray-text-underline {
+  color: #8D8C8C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 82px;
+  margin-top: 20px;
+}
+
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #040037;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 62.382px;
+  font-size: 19.962px;
+  font-weight: bold;
+  width: auto;
+  gap: 40px;
+  border: none;
+}
+
+
+.button img {
+  width: 42px;
+  height: 42px;
+}
+
+
+.button span {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 19.962px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #040037;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.flex-form {
+  display: none;
+  margin-top: 2rem;
+}
+
+.linkedin-text {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.linkedin-text span {
+  text-decoration: underline;
+}
+
+.linkedin-container {
+  width: 40%;
+  padding-right: 100px;
+}
+
+.form-container {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.input-field:focus {
+  border-bottom-color: #040037;
+}
+
+.input-field::placeholder {
+  color: #8D8C8C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: Roboto;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .linkedin-container {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .form-container {
+    width: 75%;
+    padding: 0px;
+  }
+
+  .flex-form {
+    flex-direction: column;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .bold-text {
+    font-size: 18px;
+  }
+
+  .gray-text, .gray-text-underline {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .button span {
+    font-size: 16px;
+  }
+
+  .button img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .linkedin-text {
+    font-size: 24px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .input-field::placeholder {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile styles */
+@media (max-width: 480px) {
+  .bold-text {
+    font-size: 16px;
+  }
+
+  .gray-text, .gray-text-underline {
+    font-size: 12px;
+  }
+
+  .button span {
+    font-size: 14px;
+  }
+
+  .button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .linkedin-text {
+    font-size: 20px;
+  }
+
+  .input-field::placeholder {
+    font-size: 14px;
+  }
+}

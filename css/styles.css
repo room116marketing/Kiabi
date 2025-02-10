@@ -1,0 +1,278 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  padding: 10px;
+  gap: 52px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #8D8C8C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.menu a.current {
+  color: #040037;
+  font-weight: bold;
+  color: #040037;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content {
+  max-width: 1440px;
+  width: 83%;
+  margin: 4rem auto;
+  padding: 0 20px;
+}
+
+.light-title {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bold-subtitle {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.regular-text {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.italic-text {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.bold-title {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+.news-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.news-content p,
+h2 {
+  margin: 0;
+}
+
+.news-content-text {
+  color: #8D8C8C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.news-title {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.more-news-text {
+  color: #040037;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+  }
+
+  .menu {
+    gap: 30px;
+  }
+
+  .light-title {
+    font-size: 28px;
+  }
+
+  .bold-subtitle {
+    font-size: 22px;
+  }
+
+  .regular-text,
+  .italic-text {
+    font-size: 16px;
+  }
+
+  .bold-title {
+    font-size: 28px;
+  }
+
+  .news-title {
+    font-size: 20px;
+  }
+
+  .more-news-text {
+    font-size: 28px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .content {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 0 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .light-title {
+    font-size: 24px;
+  }
+
+  .bold-subtitle {
+    font-size: 20px;
+  }
+
+  .regular-text,
+  .italic-text {
+    font-size: 14px;
+  }
+
+  .bold-title {
+    font-size: 24px;
+  }
+
+  .news-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .news-content-text {
+    font-size: 14px;
+  }
+
+  .news-title {
+    font-size: 18px;
+  }
+
+  .more-news-text {
+    font-size: 24px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #040037;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-family: Roboto;
+  }
+
+  .topnav a.icon {
+    display: block;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    color: #8D8C8C;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}
