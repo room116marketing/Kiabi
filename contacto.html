@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiabi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/pages/contacto.css">
+  <script src="js/contacto.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <div class="content">
+    <nav class="desktop-menu">
+      <ul class="menu">
+        <li><a href="index.html">Actualidad</a></li>
+        <li><a href="informacion-corporativa.html">Información corporativa</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contacto.html" class="current">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu">
+      <div class="topnav">
+        <div id="myLinks">
+          <a href="index.html">Actualidad</a>
+          <a href="informacion-corporativa.html">Información corporativa</a>
+          <a href="multimedia.html">Multimedia</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+          <img src="img/icon-menu.svg" alt="" style="width: 30px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="pre-button">
+
+
+      <h1 class="light-title">Contacto</h1>
+
+      <p class="light-title">Ponte en contacto con nosotros.</p>
+
+
+      <button class="button" onclick="showForm()">
+        <span>Escríbenos</span>
+        <img src="img/icon-arrow.svg" alt="Flecha">
+      </button>
+
+      <hr>
+
+      <p class="bold-text">Para más información también puedes contactar con:</p>
+
+      <div>
+        <p class="bold-text">Harmon</p>
+        <p class="gray-text">Agencia de comunicación</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <p class="bold-text">Verónica Muñoz</p>
+          <p class="gray-text-underline"><a href="mailto:vmunoz@harmon.es">vmunoz@harmon.es</a>
+          </p>
+          <p class="gray-text">661 97 72 70</p>
+        </div>
+        <div>
+          <p class="bold-text">Viviana Ramírez</p>
+          <p class="gray-text-underline"><a href="mailto:vramirez@harmon.es">vramirez@harmon.es</a>
+          <p class="gray-text-underline"></p>
+          <p class="gray-text">650 786 520</p>
+        </div>
+        <div>
+          <p class="bold-text">Lola Luque</p>
+          <p class="gray-text-underline"><a href="mailto:lluque@harmon.es">lluque@harmon.es</a>
+          <p class="gray-text-underline"></p>
+          <p class="gray-text">634 92 78 52</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <div class="flex-form">
+      <div class="linkedin-container">
+        <p class="linkedin-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          Contactanos en <span><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></span>.</p>
+      </div>
+      <div class="form-container">
+        <input type="text" class="input-field" placeholder="Nombre">
+        <input type="text" class="input-field" placeholder="Apellido">
+        <input type="text" class="input-field" placeholder="Medio">
+        <input type="text" class="input-field" placeholder="Email">
+        <input type="text" class="input-field" placeholder="Mensaje">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
