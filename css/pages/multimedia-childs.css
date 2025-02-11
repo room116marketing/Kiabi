@@ -21,6 +21,8 @@
   position: relative;
 }
 
+/* v-stretch / h-stretch / big-stretch - pueden ser usados en cada contenedor de imagen
+para cambiar el tamaño que tienen dentro del grid*/
 .v-stretch {
   grid-row: span 2;
 }
