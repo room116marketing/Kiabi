@@ -1,3 +1,4 @@
+//Configuración de la librería del carrusel Slick Carousel
 $(document).ready(function () {
   $('.grid-team').slick({
     infinite: true,
