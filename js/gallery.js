@@ -1,3 +1,8 @@
+// Control de la galería en las páginas hijas de multimedia:
+// La selección de la carpeta que se usa para la carga se elige mediante el id del contenedor gallery-""
+// Se cargan todas las imágenes que están dentro de la carpeta, pero es necesario que las fotos estén enumeradas
+// En la carga de la web se muestran las fotos reducidas que están dentro de la carpeta "reduced", pero para la descarga se usa la imagen completa
+
 document.addEventListener('DOMContentLoaded', function () {
   const gallery = document.querySelector('.gallery');
 
