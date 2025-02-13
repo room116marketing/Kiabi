@@ -107,7 +107,7 @@ para cambiar el tamaño que tienen dentro del grid*/
   align-items: center;
   gap: 8px;
   color: white;
-  padding: 10px 16px;
+  padding: 0;
   cursor: pointer;
   background-color: white;
   border: 0;
