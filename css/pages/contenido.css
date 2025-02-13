@@ -102,6 +102,7 @@ hr {
     gap: 8px;
     color: white;
     padding: 10px 16px;
+    padding-left:0;
     cursor: pointer;
     background-color: white;
     border: 0;
@@ -138,6 +139,11 @@ hr {
     width: 100%;
     display: flex;
 }
+
+.button-wrapper div:nth-child(2) {
+    padding-left: 40px; 
+}
+
 
 .button-wrapper div {
     width: 50%;
@@ -222,6 +228,9 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
+    .button-wrapper div:nth-child(2) {
+        padding-left: 0px; 
+    }
 }
 
 /* Mobile styles */
@@ -249,5 +258,9 @@ hr {
 
     .img-wrapper img {
         width: 100%;
+    }
+
+    .button-wrapper div:nth-child(2) {
+        padding-left: 0px; 
     }
 }
