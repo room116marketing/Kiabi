@@ -141,7 +141,12 @@ para cambiar el tamaño que tienen dentro del grid*/
 
 .button-wrapper div {
   width: 50%;
+}
 
+
+.load-more {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
