@@ -5,10 +5,13 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const gallery = document.querySelector('.gallery');
-
-  if (gallery) {
+  const loadMoreButton = document.getElementById('load-more');
+  
+  if (gallery && loadMoreButton) {
     const folder = gallery.id.split('-')[1];
     let imgCount = 0;
+    let loadedImages = 0;
+    const imagesPerLoad = 4;  
 
     function loadImage(index) {
       const img = new Image();
@@ -16,11 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       img.onload = function () {
         createGalleryItem(index);
-        loadImage(index + 1);
+        loadedImages++;
+        imgCount++;
+        
+        if (loadedImages < imagesPerLoad) {
+          loadImage(index + 1);
+        } else {
+          loadMoreButton.style.display = 'block';
+        }
       };
 
       img.onerror = function () {
-        imgCount = index - 1;
+        if (loadedImages === 0) {
+          loadMoreButton.style.display = 'none';
+        } else {
+          loadMoreButton.style.display = 'block';
+        }
       };
     }
 
@@ -49,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
       gallery.appendChild(item);
     }
 
+    loadMoreButton.addEventListener('click', function() {
+      loadedImages = 0;
+      loadImage(imgCount + 1);
+    });
+
+    // Initial load
     loadImage(1);
   }
 });
