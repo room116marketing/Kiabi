@@ -1,3 +1,7 @@
+.hidden-dossier {
+  display: none;
+}
+
 .grid-team {
   display: flex;
 }
