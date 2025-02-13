@@ -134,6 +134,10 @@ h2 {
   text-underline-position: from-font;
 }
 
+.hidden-news {
+  display: none;
+}
+
 /* Tablet styles */
 @media (max-width: 1024px) {
   .content {
