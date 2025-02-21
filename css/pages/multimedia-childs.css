@@ -175,6 +175,33 @@ para cambiar el tamaño que tienen dentro del grid*/
   justify-content: center;
 }
 
+.title {
+  color: #040037;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.download {
+  color: #8D8C8C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 @media (min-width: 768px) {
   .gallery .item:first-child {
     grid-area: 1 / 1 / span 2 / span 2;
@@ -203,8 +230,15 @@ para cambiar el tamaño que tienen dentro del grid*/
     grid-row: span 2;
     grid-column: span 1;
   }
+ 
 }
 
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Mobile styles */
 @media (max-width: 768px) {
   .gallery {
@@ -231,6 +265,9 @@ para cambiar el tamaño que tienen dentro del grid*/
     grid-row: auto;
     grid-column: auto;
   }
+  .logos {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*Small Mobile styles */
@@ -248,3 +285,4 @@ para cambiar el tamaño que tienen dentro del grid*/
     font-size: 14px;
   }
 }
+
