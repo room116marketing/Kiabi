@@ -53,6 +53,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .regular-text {
@@ -62,6 +64,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 
@@ -161,6 +165,8 @@ h2 {
   .regular-text,
   .italic-text {
     font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
   }
 
   .bold-title {
@@ -205,6 +211,8 @@ h2 {
   .regular-text,
   .italic-text {
     font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
   }
 
   .bold-title {
