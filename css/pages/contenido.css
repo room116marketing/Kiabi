@@ -102,7 +102,7 @@ hr {
     gap: 8px;
     color: white;
     padding: 10px 16px;
-    padding-left:0;
+    padding-left: 0;
     cursor: pointer;
     background-color: white;
     border: 0;
@@ -141,7 +141,7 @@ hr {
 }
 
 .button-wrapper div:nth-child(2) {
-    padding-left: 60px; 
+    padding-left: 60px;
 }
 
 
@@ -166,6 +166,8 @@ hr {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .grid-news {
@@ -201,6 +203,8 @@ hr {
 
     .news-title-big {
         font-size: 32px;
+        line-height: 1.5;
+        text-align: justify;
     }
 
     .img-wrapper {
@@ -228,8 +232,9 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
+
     .button-wrapper div:nth-child(2) {
-        padding-left: 0px; 
+        padding-left: 0px;
     }
 }
 
@@ -261,6 +266,6 @@ hr {
     }
 
     .button-wrapper div:nth-child(2) {
-        padding-left: 0px; 
+        padding-left: 0px;
     }
 }
