@@ -116,6 +116,8 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .more-news-text {
