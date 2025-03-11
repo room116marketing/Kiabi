@@ -124,7 +124,7 @@
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 6px;
-  
+
 }
 
 .left {
@@ -188,4 +188,18 @@
   .arrow {
     padding: 4px;
   }
+}
+
+.intro-container {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.intro-container p {
+  line-height: 1.5;
+}
+
+
+.intro-image {
+  width: 50%;
 }
