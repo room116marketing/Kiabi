@@ -35,6 +35,8 @@
     display: flex;
     width: 100%;
     gap: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .img-wrapper img {
@@ -173,7 +175,7 @@ hr {
 .grid-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 81px;
+    gap: 40px;
     margin-top: 72px;
     margin-bottom: 82px;
 }
@@ -209,6 +211,7 @@ hr {
 
     .img-wrapper {
         flex-direction: column;
+
     }
 
     .img-wrapper img {
@@ -268,4 +271,9 @@ hr {
     .button-wrapper div:nth-child(2) {
         padding-left: 0px;
     }
+}
+
+.content-container {
+    max-width: 736px;
+    margin: 0 auto;
 }
