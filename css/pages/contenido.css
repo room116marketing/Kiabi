@@ -175,7 +175,7 @@ hr {
 .grid-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 81px;
     margin-top: 72px;
     margin-bottom: 82px;
 }
